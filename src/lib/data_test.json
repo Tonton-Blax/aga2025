@@ -1,0 +1,41 @@
+[
+  {
+    "id": "075aa798-fd35-4803-8f38-fa917d07f451",
+    "civilite": "H",
+    "nom": "ARNAULT",
+    "prenom": "Nathan",
+    "date_de_naissance": "15/09/1997",
+    "local": "fr",
+    "actions": 225,
+    "valorisation": 48960,
+    "ratio_salaire": 0.79,
+    "email": "narnault@iliad.fr",
+    "matricule": 30160743
+  },
+  {
+    "id": "ac859ba3-1508-42cb-8f2d-66b7946b3097",
+    "civilite": "H",
+    "nom": "FRAICHARD",
+    "prenom": "Julien",
+    "date_de_naissance": "11/03/1981",
+    "local": "fr",
+    "actions": 1200,
+    "valorisation": 261120,
+    "ratio_salaire": 2.2,
+    "email": "jfraichard@iliad.fr",
+    "matricule": 30160891
+  },
+  {
+    "id": "fae837a4-2f98-493a-9bd3-54211058467d",
+    "civilite": "H",
+    "nom": "MAITRE",
+    "prenom": "Alexis",
+    "date_de_naissance": "10/02/1993",
+    "local": "fr",
+    "actions": 1200,
+    "valorisation": 261120,
+    "ratio_salaire": 2.2,
+    "email": "amaitre@iliad.fr",
+    "matricule": 30158303
+  }
+]

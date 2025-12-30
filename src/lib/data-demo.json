@@ -1,0 +1,50 @@
+[
+  {
+    "id": "075aa798-fd35-4803-8f38-fa917d07f451",
+    "civilite": "F",
+    "nom": "Prane",
+    "prenom": "Dolly",
+    "date_de_naissance": "16/03/1981",
+    "local": "fr",
+    "actions": "50",
+    "valorisation": "180",
+    "ratio_salaire": ", soit 25% de votre rémunération annuelle brute",
+    "email": "prane@test.fr"
+  },
+  {
+    "id": "ac859ba3-1508-42cb-8f2d-66b7946b3097",
+    "civilite": "H",
+    "nom": "Volta",
+    "prenom": "René",
+    "date_de_naissance": "14/02/2001",
+    "local": "fr",
+    "actions": "100",
+    "valorisation": "180",
+    "ratio_salaire": ", soit 3 fois le montant de votre rémunération annuelle brute",
+    "email": "volta@test.fr"
+  },
+  {
+    "id": "fae837a4-2f98-493a-9bd3-54211058467d",
+    "civilite": "F",
+    "nom": "Iskon",
+    "prenom": "Gav",
+    "date_de_naissance": "16/03/1997",
+    "local": "pl",
+    "actions": "75",
+    "valorisation": "180",
+    "ratio_salaire": "",
+    "email": "iskon@test.fr"
+  },
+  {
+    "id": "84002ab9-a114-40c0-bd7b-c47397da3b3e",
+    "civilite": "H",
+    "nom": "Meprazole",
+    "prenom": "Enzo",
+    "date_de_naissance": "09/11/2005",
+    "local": "it",
+    "actions": "100",
+    "valorisation": "180",
+    "ratio_salaire": ", cioè 3 volte l'importo della vostra retribuzione annua lorda",
+    "email": "meprazole@test.fr"
+  }
+]

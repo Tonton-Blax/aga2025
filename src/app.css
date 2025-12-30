@@ -1,0 +1,155 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '/plyr-custom.css';
+
+@layer base {
+	html {
+		font-family: 'GothamPro', system-ui, sans-serif;
+		--ired: theme(colors.ired.DEFAULT);
+		--resize-factor: 1;
+		--plyr-video-control-background-hover: theme(colors.ired.DEFAULT);
+		--plyr-color-main: theme(colors.ired.DEFAULT);
+		--plyr-color-main: theme(colors.ired.DEFAULT);
+		--plyr-video-control-background: theme(colors.igray.400);
+		--plyr-control-radius: 0.75rem;
+		scroll-behavior: smooth;
+		/* -plyr-menu-radius */
+	}
+
+	.plyr__control--overlaid {
+		background: yellow !important;
+	}
+
+	[data-plyr='play']:not(.plyr__controls__item.plyr__control) {
+		--plyr-control-spacing: 16px;
+		--plyr-control-icon-size: 45px;
+	}
+
+	.plyr--video,
+	video {
+		border-radius: 0.75rem;
+	}
+
+	@media screen and (max-width: 767px) {
+		button.plyr__control.plyr__control--overlaid {
+			transform: scale(1) translate(-25px, -30px);
+			transform-origin: reset;
+		}
+
+		[data-plyr='play']:not(.plyr__controls__item.plyr__control) {
+			--plyr-control-spacing: 12px;
+			--plyr-control-icon-size: 24px;
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: 'Iliad', system-ui, sans-serif;
+	}
+	.prose mark {
+		@apply bg-transparent text-lg font-semibold text-ired;
+	}
+	header + section mark {
+		@apply bg-transparent font-bold text-ired;
+	}
+}
+@font-face {
+	font-family: 'Iliad';
+	src:
+		url('/fonts/iliad-light-webfont.woff2') format('woff2'),
+		url('/fonts/light.woff') format('woff');
+	font-weight: 100 200; /* This font will be used for font-weight 100-200 */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Iliad';
+	src:
+		url('/fonts/iliad-regular-webfont.woff2') format('woff2'),
+		url('/fonts/regular.woff') format('woff');
+	font-weight: 300 600; /* This font will be used for font-weight 300-600 */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Iliad';
+	src:
+		url('/fonts/iliad-bold-webfont.woff2') format('woff2'),
+		url('/fonts/bold.woff') format('woff');
+	font-weight: 700 900; /* This font will be used for font-weight 700-900 */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-Light.woff2') format('woff2');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-LightItalic.woff2') format('woff2');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-Italic.woff2') format('woff2');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-Medium.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-MediumItalic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-Bold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-BoldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-Black.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: GothamPro;
+	src: url('/fonts/GothamPro-BlackItalic.woff2') format('woff2');
+	font-weight: 800;
+	font-style: italic;
+}
