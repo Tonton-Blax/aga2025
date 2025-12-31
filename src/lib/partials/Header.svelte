@@ -2,7 +2,9 @@
 
 	import logo_fr from "$lib/assets/logo-iliad-cropped-fr.webp";
 	import logo_en from "$lib/assets/logo-iliad-cropped-en.webp";
-    import megaphone from "$lib/assets/loud-couple.webp";
+    import ornementGauche from "$lib/assets/svgs/ornement-gauche.svg";
+    import ornementDroite from "$lib/assets/svgs/ornement-droite.svg";
+    import people3 from "$lib/assets/svgs/3people.svg";
 	import { slide, fade } from 'svelte/transition';
     import { Hamburger } from 'svelte-hamburgers';
     import { scrollTracker } from "$lib/scrollTracker.svelte";
@@ -51,20 +53,27 @@
 	{/if}
 </header>
 
- <section class="bg-black text-white md:h-[250px] h-28 max-w-[1160px] mx-auto text-center content-center xl:text-4xl md:text-3xl text-2xl leading-none flex flex-row">
-	<div class="flex w-1/3 h-5/6 justify-end self-end">
-		<img loading="lazy" src={megaphone} alt="Megaphone">
-	</div>
-	<div class="md:w-1/3 w-2/3 mx-auto flex flex-col h-full justify-evenly">
-		<h1>
-			{@html l.sections.header.title}<br>
-		</h1>
+ <section class="bg-ired overflow-y-visible text-white md:h-[250px] h-[150px] max-w-[1160px] mx-auto text-center content-center xl:text-4xl md:text-3xl text-2xl leading-none flex flex-row">
+	<div class="md:flex hidden lg:w-1/3"></div>
+	<div class="md:w-2/3 w-full mx-auto flex flex-col h-full font-head items-end justify-center relative md:-left-14 -left-4">
+		<div class="flex justify-end text-end text-black gap-x-2">
+				<h1 class="relative">Votre Attribution <br> Gratuite d’Actions</h1>				
+				<img class="-top-2 w-5 relative" loading="lazy" src={ornementDroite} alt="Header Iliad Ornement" />
+		</div>
+		<div class="flex justify-end gap-x-2 text-right relative -left-7">
+			<img loading="lazy" src={ornementGauche} alt="Header Iliad" />
+			<h1 class="text-5xl font-bold">iliad 2025</h1>
+		</div>
 		<!-- <p class="text-sm font-light text-igray">
 			Faites défiler vers le bas pour découvrir votre<br>
 			Attribution Gratuite et ses modalités
 		</p> -->
 	</div>
-	<div class="md:flex hidden w-1/3"></div>
+
+	<div class="md:flex hidden w-1/3 h-5/6 justify-start self-end relative">
+		<img loading="lazy" src={people3} alt="Equipe Iliad" class="absolute -bottom-[75px] md:w-[300px] w-[150px]"/>
+	</div>
+
  </section>
  
  <style>

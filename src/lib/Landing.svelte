@@ -141,7 +141,7 @@
 
 
 				<div 
-					class="pt-8 md:pb-16 pb-8 xl:px-40 md:px-4 px-20 xl:max-w-none md:max-w-5xl max-w-none mx-auto md:mb-0 mb-8 text-white text-center grid md:grid-cols-4 grid-cols-1 gap-x-3 md:gap-y-0 gap-y-4 items-start"
+					class="pt-8 md:pb-16 pb-8 xl:px-20 md:px-4 px-20 xl:max-w-none md:max-w-5xl max-w-none mx-auto md:mb-0 mb-8 text-white text-center grid md:grid-cols-4 grid-cols-1 gap-x-3 md:gap-y-0 gap-y-4 items-start"
 				>
 					<Etape etape={l.sections.blackBlock.etapes[0]} i={0} />
 					{#each l.sections.blackBlock.etapes.slice(1) as etape , i}

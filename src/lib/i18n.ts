@@ -73,19 +73,19 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				},
 				etapes : [
 					{
-						date: "Décembre 2024",
+						date: "Janvier 2026",
 						vignette: "J’ai reçu ma lettre d’attribution",
 						bgColor: "white",
 					},
 					{
-						date: "Janvier 2025",
+						date: "Février 2026",
 						vignette: "Je reçois un mail de la Banque Transatlantique et j’active mon compte",
-						description: "Ce mail vous permettra de vous rendre sur le portail de gestion dédié, aﬁn d’activer votre compte et de renseigner vos données personnelles (RIB, etc), et d’accepter votre attribution.",
+						description: "Ce mail vous permettra de vous rendre sur le portail de gestion dédié, afin d’activer votre compte et de renseigner vos données personnelles (RIB, etc), et d’accepter votre attribution.",
 						timeline: ["Consultation du règlement du plan", "Acceptation de mon attribution"],
 						bgColor: "red"
 					},
 					{
-						date: "Février 2025",
+						date: "Avril 2026",
 						vignette: "Je reçois un lien DocuSign pour signer un contrat de liquidité",
 						description: "Un contrat de liquidité est un document régissant notamment les modalités de vente de vos actions. La Banque Transtlantique vous enverra par mail un lien pour le signer, via Docusign.",
 						timeline: ["Signature numérique du contrat de liquidité"],
