@@ -41,7 +41,7 @@
 		{#if open}
 			<ul id="nav" class="menu bg-igray-100 text-black font-light space-y-6 text-xl relative z-10 p-6 rounded-lg" transition:slide>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="/">{l.general.menu.lettre}</a></li>
-				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#videos">{l.general.menu.videos}</a></li>
+				<!-- <li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#videos">{l.general.menu.videos}</a></li> -->
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#conditions">{l.general.menu.conditions}</a></li>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#acceptation">{l.general.menu.acceptation}</a></li>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#vente">{l.general.menu.vente}</a></li>

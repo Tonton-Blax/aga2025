@@ -8,7 +8,7 @@
 </h3>
 <hr class="h-[1.5px] bg-black w-full md:mb-0 mb-10">
 {#if sub}
-<h4 class="text-black text-xl mt-12 text-center font-light">
+<h4 class="text-black text-xl mt-12 text-center font-light text-balance">
     {@html sub}
 </h4>
 {/if}

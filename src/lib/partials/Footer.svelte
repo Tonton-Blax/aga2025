@@ -19,7 +19,8 @@
 	</div> -->
 
 
-	<IBouton spaceY="medium" minWidth link="/pdf/iliad-1920x1080-{language}-{user?.local}.pdf" text={l.sections.basDePage.boutonBrochure} />
+	<IBouton spaceY="medium" minWidth link="/pdf/iliad-1920x1080-{language}-{user?.local}.pdf" text={l.sections.basDePage.boutonReglement} />
+	<IBouton spaceY="medium" minWidth link="https://files.aga-2024.com/{user?.id}.pdf" text={l.sections.basDePage.boutonBrochure} />
 	<IBouton spaceY="medium" minWidth link="https://files.aga-2024.com/{user?.id}.pdf" text={l.sections.basDePage.boutonAttribution} />
 	<p class="text-center font-light mt-16">{l.sections.basDePage.pourTouteQuestion}</p>
 	<p class="text-center text-2xl font-light hover:text-ired my-12">

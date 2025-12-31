@@ -1,7 +1,7 @@
 <script>
 	const { offset = 0, reverse = false } = $props();
 	const offsets = [
-		'top-0', '-top-2','-top-4','-top-8','-top-16','-top-20','-top-24','-top-32','-top-48', '-top-64'
+		'top-0', '-top-2','-top-4','-top-10','-top-16','-top-20','-top-24','-top-32','-top-48', '-top-64'
 	]
 </script>
 <button
@@ -10,12 +10,23 @@
 	 class:reverse
 	 onclick={() => window.scrollTo(0, reverse? document.body.scrollHeight : 0)}
 >
-	<div class="cursor-pointer w-12 h-12 xl:ml-24 md:ml-[50%] p-3 border-2 border-offset-2 border-white rounded-lg -translate-y-1/2 bg-igray-100">
+	<div class="cursor-pointer w-16 h-24 xl:ml-24 md:ml-[50%] p-3 rounded-lg -translate-y-1/2 bg-igray-200 bg-opacity-50">
 		<svg 
-			class="group-hover:fill-ired" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+			class="group-hover:fill-ired scale-75 stroke-black {reverse ? "translate-y-7" : "translate-y-6"}"
+			xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.39" height="20.757" viewBox="0 0 38.39 20.757"
 		>
-			<path d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"></path>
+			<defs>
+				<clipPath id="clip-path">
+				<rect id="Rectangle_1089" data-name="Rectangle 1089" width="38.39" height="20.757" fill="none" stroke-width="3"/>
+				</clipPath>
+			</defs>
+			<g id="Groupe_102" data-name="Groupe 102" transform="translate(38.39 20.757) rotate(180)">
+				<g id="Groupe_45" data-name="Groupe 45" clip-path="url(#clip-path)">
+				<path id="Tracé_54" data-name="Tracé 54" d="M70.266,35,52.633,52.633,35,35" transform="translate(-33.438 -33.438)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+				</g>
+			</g>
 		</svg>
+
 	</div>
 </button>
 
@@ -25,9 +36,9 @@
 		@apply rotate-180;
 	}
 	button:hover svg {
-		@apply fill-ired scale-125;
+		@apply stroke-ired scale-100 transition-all;
 	}
 	button.reverse:hover svg {
-		@apply fill-ired scale-125 rotate-180;
+		@apply stroke-ired scale-100 rotate-180;
 	}
 </style>

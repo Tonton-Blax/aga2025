@@ -5,7 +5,7 @@
     const { l } : { l: App.ILocalizedContent } = $props();
 
 </script>
-<div class="pt-10 xl:max-w-none md:max-w-4xl mx-auto px-12 md:px-24 text-black text-center grid md:grid-cols-2 xl:gap-x-6 mt-6 mb-12">
+<div class="pt-10 xl:max-w-none md:max-w-4xl mx-auto px-12 md:px-24 text-black text-center grid md:grid-cols-2 xl:gap-x-6 mt-6 mb-12 justify-center md:justify-normal">
     <div class="w-auto flex flex-col gap-y-12 self-center">
         <div class="flex flex-row gap-x-6 items-start">
             <img width="82" class="aspect-1" src={icone1} alt="Icône critère financier">
@@ -37,12 +37,12 @@
             </div>
         </div>
     </div>	
-    <div class="w-auto flex flex-col items-center pl-12 justify-center">
-        <div class="p-0 md:bg-igray-200 rounded-xl w-full max-h-[600px] lg:h-[90%] md:relative overflow-y-visible flex items-end">
-        <img 
+    <div class="w-auto flex flex-col items-center md:pl-12 justify-center mt-12 md:mt-0">
+        <div class="p-0 bg-igray-200 rounded-xl w-full max-h-[250px] md:max-h-[320px] xl:max-h-[370px] lg:h-[90%] justify-center md:justify-normal md:relative overflow-y-visible flex items-end">
+        <img
             src={what}
-            alt="Illustration Actions Iliad"
-            class="block rounded-2xl relative z-[1] max-w-none w-10/12"
+            alt="Illustration Conditions de performance Iliad"
+            class="block rounded-2xl relative z-[1] max-w-[180px] md:max-w-none w-3/4 md:w-10/12"
         />
     </div>
     </div>	

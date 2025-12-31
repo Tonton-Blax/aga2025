@@ -45,14 +45,14 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col items-start mt-5">
-		<div class="flex">
-			<div class="md:w-4/5 w:5/6 flex flex-col justify-center items-center justify-items-center">
-				<div class="w-48 h-20 relative flex overflow-visible">
-					<img loading="lazy" src={content} alt="Icône tasse de café">
+	<div class="flex flex-col items-start mt-5 w-full">
+		<div class="flex w-full pl-6">
+			<div class="flex flex-col justify-center items-center justify-items-center w-full md:w-2/3">
+				<div class="w-20 h-20 flex overflow-visible relative">
+					<img class="-scale-x-150 origin-[30%_98%] md:scale-[2] lg:scale-[2.5] md:origin-[0%_98%] absolute w-[200px] bottom-0" loading="lazy" src={content} alt="Icône tasse de café">
 				</div>
-				<div class="h-24 w-4/5 bg-ired text-center items-center text-white md:font-medium font-light text-xs rounded-xl flex md:p-6 p-2">
-					<span>{@html l.sections.prixdeVente.vignettes[2]}</span>
+				<div class="h-24 w-full bg-ired items-center text-white md:font-medium font-light text-xs rounded-xl flex">
+					<span class="text-center w-full">{@html l.sections.prixdeVente.vignettes[2]}</span>
 				</div>
 			</div>
 		</div>

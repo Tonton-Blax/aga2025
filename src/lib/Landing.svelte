@@ -2,19 +2,17 @@
 	import FAQ from './partials/FAQ.svelte';
 	import Revente from './partials/Revente.svelte';
 	const { user, l, language } : { user: App.IUser | null, l: App.ILocalizedContent, language: 'fr' | 'en' } = $props();
-	import { Lettre, Videos, Title, Modal, Block, Actions, BlackTitle, Criteres, Etape, ScrollButton, IBouton, Footer, Nav } from './partials';
+	import { Lettre, Title, Modal, Block, Actions, BlackTitle, Criteres, Etape, ScrollButton, IBouton, Footer, Nav } from './partials';
 	import Header from './partials/Header.svelte';
 	import { onMount } from 'svelte';
 	import gsap from "gsap";
 	import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 	import { browser } from '$app/environment';
-	import iconeBal from "$lib/assets/bal.webp";
 
 
 	if (browser)
 		gsap.registerPlugin(ScrollTrigger)
 
-	let blockVideos: HTMLElement | undefined = $state();
 	let blockActions: HTMLElement | undefined = $state();
 	let blockBlack: HTMLElement | undefined = $state();
 	let blockFAQ: HTMLElement | undefined = $state();
@@ -70,7 +68,7 @@
 
 <Modal bind:showModal>
 	{#snippet header()}
-		<img src={iconeBal} alt="icone bal" class="w-48 justify-self-center h-auto" />
+		<!-- <img src={iconeBal} alt="icone bal" class="w-48 justify-self-center h-auto" /> -->
 	{/snippet}
 
 	<p class="my-4">
@@ -193,9 +191,9 @@
 		<Block mt="12">
 			<div bind:this={blockFAQ}>
 				<FAQ {l} />				
-				<p class="font-light font-igray-200 text-sm my-10 italic">
+				<!-- <p class="font-light font-igray-200 text-sm my-10 italic">
 					{@html l.sections.faq.disclaimer}
-				</p>
+				</p> -->
 			</div>
 		</Block>
 
@@ -210,7 +208,7 @@
 
 	<div class="xl:container mx-auto py-10" id="documents">
 
-		<ScrollButton offset={2} />
+		<ScrollButton offset={3} />
 
 		<Block>
 			<Footer {l} {language} {user} bind:showModal />

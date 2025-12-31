@@ -1,5 +1,4 @@
 import Lettre from './Lettre.svelte';
-import Videos from './Videos.svelte';
 import Title from './Title.svelte';
 import Block from './Block.svelte';
 import Actions from './Actions.svelte';
@@ -15,7 +14,6 @@ import Modal from './Modal.svelte';
 
 export {
 	Lettre,
-	Videos,
 	Title,
 	Block,
 	Actions,

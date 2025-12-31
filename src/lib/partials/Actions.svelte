@@ -5,7 +5,7 @@
 </script>
 
 <div class="md:flex flex-row w-full mx-auto xl:gap-x-24 md:gap-x-16">
-    <div class="p-0 md:bg-white rounded-xl md: w-full md:w-1/2 lg:w-5/12 md:relative overflow-x-visible overflow-y-clip flex items-end">
+    <div class="p-0 md:bg-white rounded-xl mx-auto w-3/4 md:w-1/2 lg:w-5/12 md:relative overflow-x-visible overflow-y-clip flex items-end">
         <img
             src={crieur}
             alt="Illustration Actions Iliad"

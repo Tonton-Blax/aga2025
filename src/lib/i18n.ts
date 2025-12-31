@@ -51,7 +51,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 			},
 			blackBlock : {
 				titleCritere: {
-					title:"Quelles sont les conditions de<br> performance du groupe ?",
+					title:"Quelles sont les conditions de<br> performance du groupe&nbsp;?",
 					sub:"La performance du groupe repose sur deux critères clé :",
 				},
 				criteres : [
