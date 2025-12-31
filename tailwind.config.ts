@@ -41,6 +41,7 @@ export default {
 			'sm': '576px',
 			'md': '768px',
 			'xl': '1280px',
+			'2xl': '1440px',
 		},
 		extend: {
 			colors: {

@@ -21,7 +21,8 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				texte: `<p>Le Conseil d’Administration du groupe iliad a décidé le 16 décembre 2024, sur proposition de son Directeur Général et de son fondateur, de mettre en place un <strong>Plan d’Attribution Gratuite d’Actions Iliad</strong> (dit « Plan d’AGA »).</p> <p>Nous sommes heureux de vous informer que <strong>vous êtes bénéficiaire de ce plan</strong>. Cette initiative vise à reconnaitre votre contribution et à vous associer durablement à la réussite du Groupe.</p> <p>Nous vous informons que <mark>{{ actions }} actions gratuites iliad</mark> vous ont été attribuées dans le cadre de ce plan.</p> <p>L’acquisition de vos actions se fera en deux étapes : <strong>30% en {{ tranche1 }}</strong> et <strong>70% en {{ tranche2 }}</strong>, sous réserve d’être présent{{ feminin }} dans nos effectifs à chaque échéance, et de l’atteinte de conditions de performance du Groupe, financières et environnementales.</p> <p>Après l’acquisition de vos actions, vous deviendrez actionnaire du groupe et pourrez alors <strong>conserver</strong> vos actions et percevoir des dividendes, ou les <strong>vendre</strong> partiellement ou totalement pour percevoir leur valeur monétaire correspondante.</p> <p>Chaque année, l’action iliad fait l’objet d’une valorisation réalisée par un expert financier indépendant. La dernière valorisation du prix de l’action iliad s’élève à 217,60€. Sur la base de cette valorisation, les {{ actions }} actions qui vous ont été attribuées sont actuellement valorisées à <mark>{{ valorisation }}€<sup>1</sup></mark><strong>{{ ratio_salaire }}.</strong></p> <p>Cette attribution gratuite d’actions est une façon de faire vivre nos valeurs de partage, d’innovation et d’entreprenariat. Ensemble, continuons à bâtir un groupe de télécom international, ambitieux, engagé et toujours plus proche des attentes de nos abonnés.</p> <p>Nous vous prions d'agréer, {{ dear }} {{ prenom }}, l'expression de notre considération distinguée.</p>`,
 				intituleXN: "Président du conseil d’administration",
 				intituleTR: "Directeur général",
-				boutonDownload: "Télécharger ma lettre d’attribution au format pdf",
+				boutonDownload: "Télécharger ma lettre d’attribution",
+				boutonGuide: "Télécharger votre guide d’attribution",
 				ps: "Montant brut avant prélèvements obligatoires"
 			},
 			videos: {
@@ -33,11 +34,11 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				sectionTitle: 'Vos actions en bref',
 				date: {
 					label: "Date d’acquisition effective",
-					text:`<strong>Tranche 1:</strong><br>30% des actions le 16 décembre 2026<br><strong>Tranche 2:</strong><br>70% des actions le 16 décembre 2027`
+					text:`<strong>Tranche 1:</strong> 30% des actions le 16 décembre 2026<br><strong>Tranche 2:</strong> 70% des actions le 16 décembre 2027`
 				},
 				conditions: {
 					label: "Conditions d’acquisition",
-					text: "<strong>Tranche 1 :</strong><br>Présence dans le groupe au 16 décembre 2026<br><strong>Tranche 2:</strong><br>Présence dans le groupe au 16 décembre 2027",
+					text: "<strong>Tranche 1 :</strong> Présence dans le groupe au 16 décembre 2026<br><strong>Tranche 2:</strong> Présence dans le groupe au 16 décembre 2027",
 				},
 				nombre: {
 					label: "Nombre d’actions acquises",
@@ -45,7 +46,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				},
 				cession: {
 					label: `Cession des actions`,
-					text: `<strong>Actions de Tranche 1 :</strong> dès 2027<br> durant une période annuelle dédiée<br> <strong>Actions de Tranche 2 :</strong> dès 2028<br> durant une période annuelle dédiée`,
+					text: `<strong>Actions de Tranche 1 :</strong> dès 2027 durant une période annuelle dédiée<br> <strong>Actions de Tranche 2 :</strong> dès 2028 durant une période annuelle dédiée`,
 				}
 			},
 			blackBlock : {
@@ -57,12 +58,12 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 					{
 						title:"Un critère financier",
 						chiffre: 25,
-						description:"Qui est calculé à partir du principal indicateur de rentabilité du groupe."
+						description: "Qui est calculé à partir d’un des indicateurs financiers de référence du groupe (OFCF)."
 					},
 					{
 						title:"Un critère RSE",
 						chiffre: 25,
-						description:"La RSE (Responsabilité Sociale des Entreprises), qui vise à réduire l’empreinte de nos activités sur le climat et l’environnement."
+						description:"L’ESG, qui couvre les enjeux environnementaux, sociaux et de gouvernance, qui vise dans le cadre de ce plan à sensibiliser les collaborateurs du groupe à ces sujets et à réduire l’empreinte de nos activités sur l’environnement."
 					}
 				],
 				criteresSubtitle: "50% des actions reposent sur la seule condition de présence au sein du groupe aux dates d’acquisition de chaque tranche",
@@ -208,7 +209,8 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				texte: `<p>The Board of Directors of iliad decided on December 16<sup>th</sup> 2024, on the initiative of its Founder and Chief Executive Officer, to implement a <strong>Free Iliad Share Allocation Plan.</strong></p> <p>We are pleased to inform you that <strong>you are a beneficiary of this plan</strong>. This initiative aims to recognize your contribution and to involve you in the long-term success of the Group.</p> <p>We inform you that <mark>{{ actions }} free iliad shares</mark> have been allocated to you under this plan.</p> <p>Your shares will vest in two phases : <strong>30% in {{ tranche1 }}</strong> and <strong>70% in {{ tranche2 }}</strong>, provided that you are still employed by the Group at each vesting date, and that the Group meets its financial and environmental objectives.</p> <p>Once your shares vested, you will become a shareholder of the Group and will be able to <strong>keep</strong> your shares and receive dividends, or <strong>sell</strong> them partially or totally to receive their corresponding cash value.</p> <p>Each year, the iliad share is valued by an independent financial expert. The latest iliad share price valuation was 217,60€. Based on this valuation, the {{ actions }} shares allocated to you are currently valued at <mark>{{ valorisation }}€<sup>1</sup></mark><strong>{{ ratio_salaire }}.</strong></p> <p>These free shares are a way of living up to our values of sharing, innovation and entrepreneurship. Together, let's continue to build an international telecoms group ambitious, committed and always closer to our subscribers' expectations. Yours sincerely,</p>`,
 				intituleXN: "President of the Board of Directors",
 				intituleTR: "Chief Executive Officer",
-				boutonDownload: "Download my allocation letter in PDF format",
+				boutonDownload: "Download my allocation letter",
+				boutonGuide: "Download my allocation guide",
 				ps: "Gross amount before tax"
 			},
 			header: {
@@ -223,11 +225,11 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				sectionTitle: 'Your shares in brief',
 				date: {
 					label: "Vesting date",
-					text: `<strong>Tranche 1:</strong><br>30% of the shares on {{ day }} {{ tranche1 }}<br><strong>Tranche 2:</strong><br>70% of the shares on {{ day }} {{ tranche2 }}`
+					text: `<strong>Tranche 1:</strong>30% of the shares on {{ day }} {{ tranche1 }}<br><strong>Tranche 2:</strong><br>70% of the shares on {{ day }} {{ tranche2 }}`
 				},
 				conditions: {
 					label: "Vesting condition",
-					text: "<strong>Tranche 1:</strong><br>Presence within the Group on {{ day }} {{ tranche1 }}<br><strong>Tranche 2:</strong><br>Presence within the Group on {{ day }} {{ tranche2 }}",
+					text: "<strong>Tranche 1:</strong>Presence within the Group on {{ day }} {{ tranche1 }}<br><strong>Tranche 2:</strong><br>Presence within the Group on {{ day }} {{ tranche2 }}",
 				},
 				nombre: {
 					label: "Number of shares vested",
@@ -235,7 +237,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				},
 				cession: {
 					label: `Transfer of the shares`,
-					text: `<strong>Tranche 1 shares:</strong> from 2027<br> during a dedicated period of time<br> <strong>Tranche 2 shares:</strong> from 2028<br> during a dedicated period of time`,
+					text: `<strong>Tranche 1 shares:</strong> from 2027 during a dedicated period of time<strong>Tranche 2 shares:</strong> from 2028<br> during a dedicated period of time`,
 				}
 			},
 			blackBlock: {

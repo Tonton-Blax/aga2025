@@ -1,14 +1,19 @@
 <script lang="ts">
 	import IBouton from './IBouton.svelte';
 	import { fly } from 'svelte/transition';
-    import signThomas from "$lib/assets/sign-thomas.webp";
-	import signXavier from "$lib/assets/sign-xavier.webp";
-	import { onMount } from 'svelte';
+    // import signThomas from "$lib/assets/sign-thomas.webp";
+	// import signXavier from "$lib/assets/sign-xavier.webp";
+	import fleche from "$lib/assets/svgs/fleche.svg";
+	import { onMount, tick } from 'svelte';
 	import { replacePlaceholders } from '$lib/utils';
 	import { ratioSalaireLabel } from '$lib/i18n';
+	import gsap from "gsap";
     
     const { user, l, language, dates } : { user: App.IUser | null, l: App.ILocalizedContent, language: 'fr' | 'en', dates: App.Dates } = $props();	
 	let mounted = $state(false);
+
+	let flecheEl: HTMLImageElement | null = $state(null);
+	let flecheTextEl: HTMLDivElement | null = $state(null);
 
 	const localizationKey = $derived(`${user?.local}-${language}` as App.LanguageCode);
 	
@@ -21,7 +26,23 @@
 		ratio_salaire: user ? ratioSalaireLabel(user) : '',
 	}));
 
-	onMount(async () => { mounted = true })
+	onMount(async () => { 
+		mounted = true;
+		await tick();
+		gsap.timeline({
+			 scrollTrigger: {
+				trigger: flecheEl,
+				start: "top 80%",
+			}
+		})
+		.from(flecheEl, 
+			{ yPercent: -100, duration: 0.5, ease: "power1.in" }
+		)
+		.from(flecheTextEl, 
+			{ yPercent: 120, duration: 0.5, ease: "power1.out" }, 
+			"-=0.3"
+		);
+	})
 </script>
 <div id="lettre" class="w-full flex flex-row md:pt-0 pt-12">
 	{#if !mounted}
@@ -37,25 +58,36 @@
 
 
 		<!-- NOTE: LETTRE->SIGNATURE -->
-		<div class="flex flex-row w-full space-x-4 mt-16">
-			<div class="w-1/2 flex flex-col items-center space-y-3">
-				<div class="-mb-1.5">
+		<div class="flex flex-row w-full space-x-4 mt-16 font-head">
+			<div class="w-1/2 flex flex-col items-center space-y-3 text-center">
+				<!-- <div class="-mb-1.5">
 					<img class="h-10 w-auto" src={signXavier} alt="Mot de Xavier Niel">
-				</div>
-				<p class="text-ired text-md text-center">Xavier Niel</p>
-				<p class="text-black text-xs uppercase text-center">{l.sections.lettre.intituleXN}</p>
+				</div> -->
+				<p class="text-ired text-md">Xavier Niel</p>
+				<p class="text-black text-xs font-thin uppercase">{l.sections.lettre.intituleXN}</p>
 			</div>
 			<div class="w-1/2 flex flex-col items-center space-y-3">
-				<div class="-mb-1.5">
+				<!-- <div class="-mb-1.5">
 					<img class="h-10 w-auto" src={signThomas} alt="Mot de Thomas Reynaud">
-				</div>
-				<p class="text-ired text-md text-center">Thomas Reynaud</p>
-				<p class="text-black text-xs uppercase text-center">{l.sections.lettre.intituleTR}</p>
+				</div> -->
+				<p class="text-ired text-md">Thomas Reynaud</p>
+				<p class="text-black text-xs font-thin uppercase">{l.sections.lettre.intituleTR}</p>
 			</div>
 		</div>
 
-		<IBouton link="https://files.aga-2024.com/{user?.id}.pdf" text={l.sections.lettre.boutonDownload} />
-
+		<!-- NOTE: DL LETTRE -->
+		<div class="w-full flex md:flex-row flex-col bg-igray-100 rounded-2xl mt-16 overflow-hidden lg:max-w-none max-w-[90vw] sm:max-w-[75vw] mx-auto pb-10 md:pb-0">
+			<div class="flex flex-col border-1 pb-12 gap-y-2 w-3/4 md:border-r border-white px-12 mx-auto">
+				<img bind:this={flecheEl} src={fleche} alt="Flèche décorative" class="mx-auto mb-4 opacity-[0.41]" />
+				<div class="text-center text-xs" bind:this={flecheTextEl}>
+					<span class="text-ired text-pretty">Poursuivez la lecture</span> et découvrez-en plus sur le Plan d’Attribution Gratuite d’Actions Iliad
+				</div>
+			</div>
+			<div class="flex flex-col mx-auto space-y-0 justify-center items-center w-full px-12">
+				<IBouton smallText fullW spaceY="small" link="https://files.aga-2024.com/{user?.id}.pdf" text={l.sections.lettre.boutonDownload} />
+				<IBouton smallText fullW spaceY="small" link="https://files.aga-2024.com/{user?.id}.pdf" text={l.sections.lettre.boutonGuide} />
+			</div>
+		</div>
 		<div class="flex flex-row w-full md:mt-16 mt-2 md:pb-0 pb-8 justify-start text-xs text-igray-200">
 			1. {l.sections.lettre.ps}
 		</div>

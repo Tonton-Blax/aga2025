@@ -24,11 +24,7 @@
 
 	onMount(async () => { 
 
-		gsap.fromTo(blockVideos as HTMLElement,
-			{ y: 50, autoAlpha: 0},
-			{ y:0, autoAlpha: 1, duration:1.5, delay: 0.1, scrollTrigger: { trigger: blockVideos }}
-		)
-
+	
 		gsap.fromTo('.blackblock',
 			{ y: 500, autoAlpha: 0},
 			{ y: 0, autoAlpha: 1, duration: 1, scrollTrigger: { trigger: blockBlack }}
@@ -39,7 +35,7 @@
 			{ y: 0, autoAlpha: 1, stagger: 0.2, scrollTrigger: { trigger: "#criteres-sub" }}
 		)
 
-		gsap.fromTo('.action-iliad',
+		gsap.fromTo('.action-iliad ul',
 			{ filter : 'blur(200)', autoAlpha: 0},
 			{ filter : 'blur(0)', autoAlpha: 1, scrollTrigger: { trigger: blockActions }}
 		)
@@ -98,21 +94,6 @@
 			<Lettre {user} {l} {language} {dates} />
 		</Block>
 
-		<Block my="14">
-			<Title id="videos" title={l.sections.videos.sectionTitle} />
-		</Block>
-
-		<!-- NOTE: VIDEOS -->
-
-		<Block my="6">
-			<div
-				class="grid grid-cols-1 gap-4 py-3"
-				bind:this={blockVideos} 
-			>
-				<Videos {user} {l} {language} />
-			</div>				
-		</Block>
-
 		<!-- NOTE: Vos Actions -->
 
 		<Block my="14">
@@ -121,7 +102,6 @@
 
 		<Block my="6">
 			<div
-				class="grid grid-cols-2 gap-x-6 gap-y-12 py-3 md:max-w-screen-md mx-auto px-4 xl:mb-0 md:mb-12 mb-0"
 				bind:this={blockActions} 
 			>
 			<!-- NOTE: CONDITIONS -->
@@ -140,20 +120,20 @@
 		bind:this={blockBlack} 
 	>
 		<div
-			class="md:-my-56 -my-32 h-full bg-black blackblock md:pb-0 pb-12" 
+			class="md:-my-56 -my-32 h-full bg-white blackblock md:pb-0 xl:p-20 lg:p-16 p-8" 
 		>
 			<div>
 
 			<!-- NOTE: CRITERES DE PERFORMANCE -->
 
-				<BlackTitle id="conditions"
+				<Title id="conditions"
 					title={l.sections.blackBlock.titleCritere.title}
 					sub={l.sections.blackBlock.titleCritere.sub}
 				/>
 
 				<Criteres {l} />
 
-				<BlackTitle
+				<Title
 					id="acceptation"
 					title={l.sections.blackBlock.titleAttribution.title}
 					sub={l.sections.blackBlock.titleAttribution.sub}
@@ -241,7 +221,7 @@
 
  <style lang="postcss">
 
-	.blackblock::before {
+	/* .blackblock::before {
 		--ratio: calc(294 / 213);
 		background-image:url('/en-bref.webp');
 		background-repeat: no-repeat;
@@ -255,7 +235,7 @@
 		top: calc(-0.82 * 200px * var(--ratio));
 		left: 84%;
 		transform: translateX(-50%);
-	}
+	} */
 
 	@media (min-width: 768px) and (max-width: 1023px) {
 		.blackblock::before {

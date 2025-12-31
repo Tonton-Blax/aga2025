@@ -39,7 +39,8 @@ declare global {
 					texte:string
 					intituleXN: string
 					intituleTR: string
-					boutonDownload: string
+					boutonDownload: string,
+					boutonGuide: string,
 					ps: string
 				},
 				header: {

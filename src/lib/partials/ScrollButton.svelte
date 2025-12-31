@@ -1,7 +1,7 @@
 <script>
 	const { offset = 0, reverse = false } = $props();
 	const offsets = [
-		'-top-2','-top-4','-top-8','-top-16','-top-20','-top-24','-top-32','-top-48', '-top-64'
+		'top-0', '-top-2','-top-4','-top-8','-top-16','-top-20','-top-24','-top-32','-top-48', '-top-64'
 	]
 </script>
 <button
