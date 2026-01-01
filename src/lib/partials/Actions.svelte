@@ -1,4 +1,5 @@
 <script lang="ts">
+    //todo:retype
     import crieur from "$lib/assets/svgs/crieur.svg";
     const { l, dates, user, language } : { user: App.IUser | null, l: App.ILocalizedContent, language: 'fr' | 'en', dates: App.Dates } = $props();
     const localizationKey = `${user?.local || 'fr'}-${language || 'fr'}` as App.LanguageCode
