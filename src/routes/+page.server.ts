@@ -130,7 +130,7 @@ export const load: ServerLoad = async ({ cookies, url }) => {
             maxAge: 60 * 10,
             secure: !isDev,
             httpOnly: true,
-            sameSite: isDev ? 'lax' : 'strict'
+            sameSite: 'lax'
         });
 
         const cleanUrl = new URL(url);
