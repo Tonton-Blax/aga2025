@@ -6,7 +6,7 @@ export function replacePlaceholders(
         if (vars[key] !== undefined && vars[key] !== null) {
             return String(vars[key]);
         }
-        console.warn(`Key '${key}' not found in template vars.`);
+        //console.warn(`Key '${key}' not found in template vars.`);
         return match;
     });
 }

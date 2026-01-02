@@ -30,7 +30,7 @@
 		<img loading="eager" src={logoHeader} alt="Logo Iliad" />
 	</a>
 	{#if !scrollTracker.isScrolling}
-	<nav class="md:hidden block fixed z-[10] right-2 top-2" transition:fade>
+	<nav class="md:hidden block fixed z-[10] right-2 top-2 relative flex flex-col items-end" transition:fade>
 		<Hamburger --color="var(--ired)"
 			bind:open
 			type="collapse"
@@ -39,7 +39,7 @@
 		/>
 	
 		{#if open}
-			<ul id="nav" class="menu bg-igray-100 text-black font-light space-y-6 text-xl relative z-10 p-6 rounded-lg" transition:slide>
+			<ul id="nav" class="menu absolute right-0 top-full mt-2 bg-igray-100 text-black font-light space-y-6 text-xl z-10 p-6 rounded-lg" transition:slide>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="/">{l.general.menu.lettre}</a></li>
 				<!-- <li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#videos">{l.general.menu.videos}</a></li> -->
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#conditions">{l.general.menu.conditions}</a></li>
