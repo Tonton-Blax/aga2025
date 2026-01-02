@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracé_232" data-name="Tracé 232" d="M0,0H46.924V-41.246H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ellipse_17" data-name="Ellipse 17" fill="#fff" stroke="#cc0100" stroke-width="1">
+    <circle cx="38" cy="38" r="38" stroke="none"/>
+    <circle cx="38" cy="38" r="37.5" fill="none"/>
+  </g>
+  <g id="Groupe_70" data-name="Groupe 70" transform="translate(15 58.246)">
+    <g id="Groupe_59" data-name="Groupe 59" clip-path="url(#clip-path)">
+      <g id="Groupe_58" data-name="Groupe 58" transform="translate(0.75 -0.75)">
+        <path id="Tracé_231" data-name="Tracé 231" d="M0,0H45.424m-3.43,0h-9.4V-26.616h9.4ZM27.414,0h-9.4V-19.282h9.4ZM12.835,0h-9.4V-12.835h9.4ZM3.608-19.636c20.562-4.1,30.787-13.228,36.079-20.11h-7.63m7.63,0v7.807" fill="none" stroke="#cc0100" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

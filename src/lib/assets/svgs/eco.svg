@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracé_236" data-name="Tracé 236" d="M0,0H49.2V-42.592H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ellipse_18" data-name="Ellipse 18" fill="#fff" stroke="#cc0100" stroke-width="1">
+    <circle cx="38" cy="38" r="38" stroke="none"/>
+    <circle cx="38" cy="38" r="37.5" fill="none"/>
+  </g>
+  <g id="Groupe_71" data-name="Groupe 71" transform="translate(13 59.296)">
+    <g id="Groupe_64" data-name="Groupe 64" clip-path="url(#clip-path)">
+      <g id="Groupe_61" data-name="Groupe 61" transform="translate(27.739 -36.931)">
+        <path id="Tracé_233" data-name="Tracé 233" d="M0,0A28.493,28.493,0,0,0-8.371,12.56" fill="none" stroke="#cc0100" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Groupe_62" data-name="Groupe 62" transform="translate(21.59 -29.409)">
+        <path id="Tracé_234" data-name="Tracé 234" d="M0,0A3.614,3.614,0,0,1-.767-.592c-2.585-2.631-.927-8.057,3.046-10.044a16.409,16.409,0,0,1,9.744-1.631A17.548,17.548,0,0,1,9.682-2.929,8.141,8.141,0,0,1,3.126.68" fill="none" stroke="#cc0100" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Groupe_63" data-name="Groupe 63" transform="translate(30.648 -0.75)">
+        <path id="Tracé_235" data-name="Tracé 235" d="M0,0,.064-8.675a8.382,8.382,0,0,1,3.2-6.626l.046-.035,5.313-4A1.235,1.235,0,0,0,9.1-20.1c.221-1.173.993-4.25,3.129-5.293a.78.78,0,0,1,1.127.751L12.8-19.263a3.008,3.008,0,0,1-.731,1.756L8.837-13.792m4.791-14.349.4-2.281A3.608,3.608,0,0,1,16.877-33.4a.192.192,0,0,1,.056-.014.76.76,0,0,1,.863.806l-.955,16.077a3.463,3.463,0,0,1-1.178,2.405L8.348-6.3a3.239,3.239,0,0,0-.965,1.511L7.364-.031m4.56-31.6a3.611,3.611,0,0,0-1.975,3.625l.615,4.12M8.232-27.512a3.652,3.652,0,0,0-.566,3.67L9.254-20.81m3.766-.614,0,0M-12.1,0l-.064-8.675a8.379,8.379,0,0,0-3.2-6.626l-.046-.035-5.313-4A1.236,1.236,0,0,1-21.2-20.1c-.221-1.173-.993-4.25-3.129-5.293a.78.78,0,0,0-1.126.751l.552,5.377a3.008,3.008,0,0,0,.731,1.756l3.232,3.715m-4.791-14.349-.4-2.281A3.61,3.61,0,0,0-28.977-33.4a.192.192,0,0,0-.056-.014.76.76,0,0,0-.863.806l.955,16.077a3.463,3.463,0,0,0,1.178,2.405l7.315,7.83a3.239,3.239,0,0,1,.965,1.511l.019,4.757m-4.56-31.6a3.611,3.611,0,0,1,1.975,3.625l-.615,4.12m2.332-3.625a3.652,3.652,0,0,1,.566,3.67l-1.588,3.032m-3.766-.614,0,0" fill="none" stroke="#cc0100" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

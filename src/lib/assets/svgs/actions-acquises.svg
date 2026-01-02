@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracé_358" data-name="Tracé 358" d="M0,0H40.438V-40.438H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ellipse_24" data-name="Ellipse 24" fill="#fff" stroke="#cc0100" stroke-width="1">
+    <circle cx="38" cy="38" r="38" stroke="none"/>
+    <circle cx="38" cy="38" r="37.5" fill="none"/>
+  </g>
+  <g id="Groupe_78" data-name="Groupe 78" transform="translate(18 58.438)">
+    <g id="Groupe_77" data-name="Groupe 77" clip-path="url(#clip-path)">
+      <g id="Groupe_76" data-name="Groupe 76" transform="translate(39.688 -25.258)">
+        <path id="Tracé_357" data-name="Tracé 357" d="M0,0A7.689,7.689,0,0,1-7.689,7.689,7.688,7.688,0,0,1-15.378,0,7.688,7.688,0,0,1-7.689-7.689,7.689,7.689,0,0,1,0,0ZM-10.418.122-8.2,3.173l3.008-6.346M-36.8,17.487V-13.426a1,1,0,0,1,1-1H-5.7a1.044,1.044,0,0,1,1.029,1v3.13m0,20.592v12.07a2.185,2.185,0,0,1-.651,1.515,2.158,2.158,0,0,1-1.515.627M-9.023,19.8h.043v2.567a2.15,2.15,0,0,0,2.148,2.142H-36.8a2.155,2.155,0,0,1-1.509-.627,2.139,2.139,0,0,1-.633-1.515V19.8H-9.023Zm-6.266-27.37H-31.533m13.257,5.8H-31.533m13.9,5.8h-13.9m19.572,5.8H-31.533" fill="none" stroke="#cb1417" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
