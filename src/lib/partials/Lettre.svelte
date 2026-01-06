@@ -88,7 +88,7 @@
 				<IBouton smallText fullW spaceY="small" link="https://files.aga-2024.com/{user?.id}.pdf" text={l.sections.lettre.boutonGuide} />
 			</div>
 		</div>
-		<div class="flex flex-row w-full md:mt-16 mt-2 md:pb-0 pb-8 justify-start text-xs text-igray-200">
+		<div class="flex flex-row w-full md:mt-6 mt-2 md:pb-0 pb-8 justify-start text-xs text-igray-200">
 			1. {l.sections.lettre.ps}
 		</div>
 	</div>

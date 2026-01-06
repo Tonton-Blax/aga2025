@@ -42,8 +42,7 @@
         <img
             src={what}
             alt="Illustration Conditions de performance Iliad"
-            class="block rounded-2xl relative z-[1] max-w-[180px] 
-            md:max-w-none w-3/4 md:w-10/12"
+            class="block rounded-2xl relative z-[1] max-w-[180px] md:max-w-none w-3/4 md:w-10/12 md:left-6"
         />
     </div>
     </div>	

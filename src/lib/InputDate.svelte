@@ -33,7 +33,7 @@
       birthDate: 'Enter your date of birth',
       invalidDate: 'Invalid date of birth',
       DMY: ['DD','MM', 'YYYY'],
-      remember: 'Se souvenir de moi'
+      remember: 'Se souvenir de moi / Remember me',
   }
 
   function handleInput(event: Event, field: string) {

@@ -41,7 +41,7 @@
 		{#if open}
 			<ul id="nav" class="menu absolute right-0 top-full mt-2 bg-igray-100 text-black font-light space-y-6 text-xl z-10 p-6 rounded-lg" transition:slide>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="/">{l.general.menu.lettre}</a></li>
-				<!-- <li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#videos">{l.general.menu.videos}</a></li> -->
+				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#enbref">{l.general.menu.enbref}</a></li>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#conditions">{l.general.menu.conditions}</a></li>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#acceptation">{l.general.menu.acceptation}</a></li>
 				<li class="hover:text-ired cursor-pointer"><a onclick={handleNav} href="#vente">{l.general.menu.vente}</a></li>
@@ -55,12 +55,12 @@
 
  <section class="bg-ired overflow-y-visible text-white md:h-[250px] h-[150px] max-w-[1160px] mx-auto text-center content-center xl:text-4xl md:text-3xl text-2xl leading-none flex flex-row">
 	<div class="md:flex hidden lg:w-1/3"></div>
-	<div class="md:w-2/3 w-full mx-auto flex flex-col h-full font-head items-end justify-center relative md:-left-14 -left-4">
-		<div class="flex justify-end text-end text-black gap-x-2">
+	<div class="md:w-2/3 w-full mx-auto flex flex-col h-full font-head items-end justify-center relative md:-left-14 -left-4 gap-y-2">
+		<div class="flex justify-end text-end text-black gap-x-3">
 				<h1 class="relative">Votre Attribution <br> Gratuite d’Actions</h1>				
 				<img class="-top-2 w-5 relative" loading="lazy" src={ornementDroite} alt="Header Iliad Ornement" />
 		</div>
-		<div class="flex justify-end gap-x-2 text-right relative -left-7">
+		<div class="flex justify-end gap-x-3 text-right relative -left-7">
 			<img loading="lazy" src={ornementGauche} alt="Header Iliad" />
 			<h1 class="text-5xl font-bold">iliad 2025</h1>
 		</div>

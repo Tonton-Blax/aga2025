@@ -18,7 +18,7 @@
 		{@html etape.date || '&nbsp;'}
 	</p>
 
-	<div class="w-11 h-11 bg-ired rounded-full flex justify-center items-center font-bold md:order-none order-2 border-[4px] border-igray-100 outlined">
+	<div class="w-11 h-11 bg-ired rounded-full grid place-items-center font-bold leading-none md:order-none order-2 border-[4px] border-igray-100 outlined">
 		{i+1}
 	</div>
 
@@ -53,8 +53,8 @@
 		{#if etape.timeline}
 		{#each etape.timeline as timeline}
 		<div class="rounded-xl bg-igray-400 flex flex-col justify-center items-center text-sm leading-tight h-20 my-16 relative">
-			<span class="absolute left-1/2 -top-1.5 w-4 h-4 -translate-x-1 rounded-full bg-ired border-white border-solid border-[3px]"></span>
-			<span class="absolute left-1/2 translate-x-[3px] -translate-y-10 -top-[1px] w-[1.5px] h-12 bg-ired z-[2]"></span>
+			<span class="absolute left-[49%] -top-1.5 w-4 h-4 -translate-x-1 rounded-full bg-ired border-white border-solid border-[3px]"></span>
+			<span class="absolute left-[49%] translate-x-[3px] -translate-y-10 -top-[1px] w-[1.5px] h-12 bg-ired z-[2]"></span>
 			<p class="px-6">{@html timeline}</p>
 		</div>
 		{/each}

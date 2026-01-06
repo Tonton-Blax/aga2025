@@ -6,11 +6,11 @@
 </script>
 
 <div class="md:flex flex-row w-full mx-auto xl:gap-x-24 md:gap-x-16">
-    <div class="p-0 md:bg-white rounded-xl mx-auto w-3/4 md:w-1/2 lg:w-5/12 md:relative overflow-x-visible overflow-y-clip flex items-end">
+    <div class="p-0 md:bg-white rounded-xl mx-auto w-3/4 md:w-1/2 lg:w-5/12 md:relative overflow-visible x-overflow-y-clip flex items-end">
         <img
             src={crieur}
             alt="Illustration Actions Iliad"
-            class="block rounded-2xl relative z-[1] max-w-none md:ml-[20%] md:scale-125 scale-75"
+            class="block rounded-2xl relative z-[1] md:max-w-[27vw] max-w-none xl:max-w-none md:ml-[20%] md:scale-125 scale-75"
         />
     </div>
     <div class="action-iliad md:w-1/2 ml-4 md:ml-0">
@@ -56,6 +56,16 @@
 </div>
 
 <style>
+    /*
+      Safari doesn’t consistently support mixing overflow axes
+      (e.g. overflow-x: visible + overflow-y: clip/hidden).
+      Use a vertical-only clip-path instead: clips top/bottom while letting X overflow render.
+    */
+    .x-overflow-y-clip {
+        -webkit-clip-path: inset(0 -100vmax 0 -100vmax);
+        clip-path: inset(0 -100vmax 0 -100vmax);
+    }
+
     .li-actions {
         font-weight: 300;
     }

@@ -4,7 +4,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 			dear: ['Cher', 'Chère'],
 			menu: {
 				lettre: "Lettre",
-				videos: "Vidéo",
+				enbref: "En bref",
 				conditions: "Conditions",
 				acceptation: "Acceptation",
 				vente: "Vente",
@@ -61,7 +61,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 						description: "Qui est calculé à partir d’un des indicateurs financiers de référence du groupe (OFCF)."
 					},
 					{
-						title:"Un critère RSE",
+						title:"Un critère ESG",
 						chiffre: 25,
 						description:"L’ESG, qui couvre les enjeux environnementaux, sociaux et de gouvernance, qui vise dans le cadre de ce plan à sensibiliser les collaborateurs du groupe à ces sujets et à réduire l’empreinte de nos activités sur l’environnement."
 					}
@@ -195,7 +195,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 			dear: ['Dear', 'Dear'],
 			menu: {
 				lettre: "Allocation letter",
-				videos: "Video",
+				enbref: "In a nutshell",
 				conditions: "Conditions",
 				acceptation: "Acceptance",
 				vente: "Sell",
@@ -252,9 +252,9 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 						description: "Which is calculated from the Group's main profitability indicator."
 					},
 					{
-						title: "A CSR criterion",
+						title: "An ESG criterion",
 						chiffre: 25,
-						description: "CSR (Corporate Social Responsibility), aims to reduce the footprint of our activities on the climate and the environment."
+						description: "ESG (Corporate Social Responsibility), aims to reduce the footprint of our activities on the climate and the environment."
 					}
 				],
 				criteresSubtitle: "50% of the shares are subject only to the presence condition within the Group on the vesting dates of each tranche",

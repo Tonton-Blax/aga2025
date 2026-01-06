@@ -95,7 +95,7 @@
 		<!-- NOTE: Vos Actions -->
 
 		<Block my="14">
-			<Title title={l.sections.actions.sectionTitle} />
+			<Title title={l.sections.actions.sectionTitle} id="enbref" />
 		</Block>
 
 		<Block my="6">
@@ -106,19 +106,25 @@
 				<Actions {user} {l} {language} {dates} />
 			</div>				
 		</Block>
+
+		<ScrollButton offset={9} />
 	</div>
 </section>
  
 
  <!-- NOTE: BLACK BLOCK -->
-
+<section>
+<div class="xl:container mx-auto">
+ <ScrollButton negative={false} offset={10} />
+</div>
+</section>
  <section class="relative">
-
+	
 	<div class="xl:max-w-[1160px] w-full mx-auto relative h-auto md:pb-0 mb-16"
 		bind:this={blockBlack} 
 	>
 		<div
-			class="md:-my-56 -my-32 h-full bg-white blackblock md:pb-0 xl:p-20 lg:p-16 p-8" 
+			class="md:-my-56 -my-32 h-full bg-white blackblock md:pb-0 xl:p-20 lg:p-16 p-8 sm:!pb-0" 
 		>
 			<div>
 
@@ -139,7 +145,7 @@
 
 
 				<div 
-					class="pt-8 md:pb-16 pb-8 xl:px-20 md:px-4 px-20 xl:max-w-none md:max-w-5xl max-w-none mx-auto md:mb-0 mb-8 text-white text-center grid md:grid-cols-4 grid-cols-1 gap-x-3 md:gap-y-0 gap-y-4 items-start"
+					class="pt-8 md:pb-0 pb-8 xl:px-20 md:px-4 px-20 xl:max-w-none md:max-w-5xl max-w-none mx-auto md:mb-0 mb-8 text-white text-center grid md:grid-cols-4 grid-cols-1 gap-x-3 md:gap-y-0 gap-y-4 items-start"
 				>
 					<Etape etape={l.sections.blackBlock.etapes[0]} i={0} />
 					{#each l.sections.blackBlock.etapes.slice(1) as etape , i}
@@ -154,11 +160,10 @@
  </section>
 
  <!-- NOTE: REVENTE -->
- <section class="bg-igray-100 md:-mt-96 -mt-60">
+ <section class="bg-igray-100 md:-mt-96 -mt-60 pb-20">
 
 	<div class="xl:container mx-auto pt-56 pb-4">
-
-		<ScrollButton offset={0} />
+		<ScrollButton offset={10} />
 
 		<Block mt="28">
 			<Title id="vente" title={l.sections.prixdeVente.sectionTitle} />
@@ -167,9 +172,6 @@
 		<Block mt="12">
 			<Revente {l} />
 		</Block>
-
-		<hr class="h-1 xl:w-2/3 md:w-4/5 w-11/12 mx-auto relative bg-white mt-20">
-		<IBouton spaceY="large" link="/pdf/iliad-1920x1080-{language}-{user?.local}.pdf" text={l.sections.prixdeVente.boutonBrochure} />
 
 	</div>
 	

@@ -25,7 +25,7 @@ declare global {
 				dear: [string,string],
 				menu: {
 					lettre: string
-					videos: string
+					enbref: string
 					conditions: string
 					acceptation: string
 					vente: string,
