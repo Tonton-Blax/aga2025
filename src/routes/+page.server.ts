@@ -106,24 +106,26 @@ async function userFromToken(token: string): Promise<App.IUser> {
 
 export const load: ServerLoad = async ({ cookies, url }) => {
     const userCookieRaw = cookies.get('user');
-    const userInCookie: App.IUser | null = userCookieRaw ? JSON.parse(userCookieRaw) : undefined;
+    let userInCookie: App.IUser | null = userCookieRaw ? JSON.parse(userCookieRaw) : undefined;
 
     const token = url.searchParams.get('token');
     const tokenInCookie = cookies.get(TOKEN_COOKIE);
 
-    // If the user is already authenticated, the transient token cookie is no longer needed.
-    if (userInCookie && tokenInCookie) {
-        cookies.delete(TOKEN_COOKIE, { path: '/' });
-    }
-
     // Consume the token from the URL exactly once: store it in an HttpOnly cookie and redirect to a clean URL.
     if (token) {
+        let userInToken: App.IUser;
         try {
             // Validate/decrypt once so we don't persist garbage tokens.
-            await userFromToken(token);
+            userInToken = await userFromToken(token);
         } catch {
             error(400, { message: 'Invalid token' });
         }
+
+		// If a different user was previously authenticated on this device, clear that stale cookie.
+		if (userInCookie && userInCookie.id !== userInToken.id) {
+			cookies.delete('user', { path: '/' });
+			userInCookie = null;
+		}
 
         cookies.set(TOKEN_COOKIE, token, {
             path: '/',
@@ -136,6 +138,27 @@ export const load: ServerLoad = async ({ cookies, url }) => {
         const cleanUrl = new URL(url);
         cleanUrl.searchParams.delete('token');
         redirect(302, cleanUrl.toString());
+    }
+
+    // If a token cookie exists (post-redirect), it defines the active identity.
+    if (tokenInCookie) {
+        let userInToken: App.IUser;
+        try {
+            userInToken = await userFromToken(tokenInCookie);
+        } catch {
+            cookies.delete(TOKEN_COOKIE, { path: '/' });
+            error(400, { message: 'Invalid token' });
+        }
+
+        if (userInCookie && userInCookie.id !== userInToken.id) {
+            cookies.delete('user', { path: '/' });
+            userInCookie = null;
+        }
+
+        // If the user is already authenticated for this token, the transient token cookie is no longer needed.
+        if (userInCookie && userInCookie.id === userInToken.id) {
+            cookies.delete(TOKEN_COOKIE, { path: '/' });
+        }
     }
 
     if (!tokenInCookie && !userInCookie) {

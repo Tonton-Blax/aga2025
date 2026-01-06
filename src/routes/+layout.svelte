@@ -12,12 +12,12 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-  import { injectAnalytics } from '@vercel/analytics/sveltekit'
+  //import { injectAnalytics } from '@vercel/analytics/sveltekit'
   import { PUBLIC_ISDEV } from '$env/static/public';
 	import '../app.css';
 	let { children } = $props();
   onMount(() => {
-    injectAnalytics({ mode: PUBLIC_ISDEV==='true' ? 'development' : 'production' });
+    //injectAnalytics({ mode: PUBLIC_ISDEV==='true' ? 'development' : 'production' });
     window.scrollTo(0, 0);
   })
 </script>
