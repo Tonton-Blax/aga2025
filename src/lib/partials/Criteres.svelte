@@ -5,7 +5,7 @@
     const { l } : { l: App.ILocalizedContent } = $props();
 
 </script>
-<div class="pt-10 xl:max-w-none md:max-w-4xl mx-auto px-12 md:px-24 text-black text-center grid md:grid-cols-2 xl:gap-x-6 mt-6 mb-12 justify-center md:justify-normal">
+<div class="pt-12 xl:max-w-none md:max-w-4xl mx-auto px-12 md:px-24 text-black text-center grid md:grid-cols-2 xl:gap-x-6 mt-6 mb-12 justify-center md:justify-normal pb-6">
     <div class="w-auto flex flex-col gap-y-12 self-center">
         <div class="flex flex-row gap-x-6 items-start">
             <img width="82" class="aspect-1" src={icone1} alt="Icône critère financier">
