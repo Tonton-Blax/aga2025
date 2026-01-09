@@ -44,6 +44,13 @@ export default {
 			'2xl': '1440px',
 		},
 		extend: {
+			spacing: {
+				'120': '30rem',
+				'128': '32rem',
+				'140': '36rem',
+				'160': '40rem',
+				'196': '49rem',
+			},
 			colors: {
 				ired: {
 					DEFAULT: '#CC0000',

@@ -1,7 +1,7 @@
 export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 	fr: {
 		general: {
-			dear: ['Cher', 'Chère'],
+			dear: ['cher', 'chère'],
 			menu: {
 				lettre: "Lettre",
 				enbref: "En bref",
@@ -15,10 +15,10 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 		sections: {
 			modal: "Le règlement du plan sera disponible dans quelques jours, revenez sur cette page pour le télécharger",
 			header: {
-				title: "votre attribution<br>gratuite d'actions<br><mark>iliad 2024</mark>"
+				title: "votre attribution<br>gratuite d'actions<br><mark>iliad 2025</mark>"
 			},
 			lettre: {
-				texte: `<p>Le Conseil d’Administration du groupe iliad a décidé le 16 décembre 2024, sur proposition de son Directeur Général et de son fondateur, de mettre en place un <strong>Plan d’Attribution Gratuite d’Actions Iliad</strong> (dit « Plan d’AGA »).</p> <p>Nous sommes heureux de vous informer que <strong>vous êtes bénéficiaire de ce plan</strong>. Cette initiative vise à reconnaitre votre contribution et à vous associer durablement à la réussite du Groupe.</p> <p>Nous vous informons que <mark>{{ actions }} actions gratuites iliad</mark> vous ont été attribuées dans le cadre de ce plan.</p> <p>L’acquisition de vos actions se fera en deux étapes : <strong>30% en {{ tranche1 }}</strong> et <strong>70% en {{ tranche2 }}</strong>, sous réserve d’être présent{{ feminin }} dans nos effectifs à chaque échéance, et de l’atteinte de conditions de performance du Groupe, financières et environnementales.</p> <p>Après l’acquisition de vos actions, vous deviendrez actionnaire du groupe et pourrez alors <strong>conserver</strong> vos actions et percevoir des dividendes, ou les <strong>vendre</strong> partiellement ou totalement pour percevoir leur valeur monétaire correspondante.</p> <p>Chaque année, l’action iliad fait l’objet d’une valorisation réalisée par un expert financier indépendant. La dernière valorisation du prix de l’action iliad s’élève à 217,60€. Sur la base de cette valorisation, les {{ actions }} actions qui vous ont été attribuées sont actuellement valorisées à <mark>{{ valorisation }}€<sup>1</sup></mark><strong>{{ ratio_salaire }}.</strong></p> <p>Cette attribution gratuite d’actions est une façon de faire vivre nos valeurs de partage, d’innovation et d’entreprenariat. Ensemble, continuons à bâtir un groupe de télécom international, ambitieux, engagé et toujours plus proche des attentes de nos abonnés.</p> <p>Nous vous prions d'agréer, {{ dear }} {{ prenom }}, l'expression de notre considération distinguée.</p>`,
+				texte: `<p>Le conseil d’administration du Groupe iliad a décidé le 8 décembre 2025, sur proposition de son Directeur Général et de son fondateur, de mettre en place un <strong>plan d’Attribution Gratuite d’Actions iliad</strong> (dit « plan d’AGA »)</p> <p>Nous avons le plaisir de vous informer que vous êtes bénéficiaire de ce plan. Notre souhait de vous compter parmi nos actionnaires est une forme de reconnaissance de votre performance individuelle et témoigne de la confiance que nous plaçons en vous pour écrire notre avenir commun.</p> <p>Ainsi, ce sont <mark>{{ actions }} actions gratuites iliad</mark> qui vous ont été attribuées.</p> <p>L’acquisition de vos actions se fera en deux étapes&nbsp;:&nbsp;<strong>30% en {{ tranche1 }}</strong> et <strong>70% en {{ tranche2 }}</strong>. Leur acquisition sera conditionnée d’une part à votre présence continue dans nos effectifs à chaque échéance, et d’autre part à la réalisation par le Groupe d’objectifs financiers et environnementaux ambitieux.</p> <p>L’action iliad fait chaque année l’objet d’une valorisation par un expert financier indépendant. A date, le prix de l’action iliad s’élève à 263€, valorisant votre attribution à {{ valorisation }}<strong>{{ ratio_salaire }}.</strong></p> <p>Vous trouverez ci-dessous des informations complémentaires liées à votre attribution, ainsi que le calendrier détaillé.</p> <p>Ensemble, {{ dear }} {{ prenom }}, continuons à aller toujours plus haut, en restant fidèle à ce qui fait notre singularité : notre obsession de la qualité et de la proximité au service de nos 61 millions d’abonnés, ainsi que l’innovation utile, concrète et différenciante.</p><p>Nous comptons sur vous pour continuer à jouer un rôle clé dans cette ambition collective.</p><p>Très belle année 2026&nbsp;!</p>`,
 				intituleXN: "Président du conseil d’administration",
 				intituleTR: "Directeur général",
 				boutonDownload: "Télécharger ma lettre d’attribution",
@@ -34,11 +34,11 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				sectionTitle: 'Vos actions en bref',
 				date: {
 					label: "Date d’acquisition effective",
-					text:`<strong>Tranche 1:</strong> 30% des actions le 16 décembre 2026<br><strong>Tranche 2:</strong> 70% des actions le 16 décembre 2027`
+					text:`<strong>Tranche 1:</strong> 30% des actions le 8 décembre 2027<br><strong>Tranche 2:</strong> 70% des actions le 8 décembre 2028`
 				},
 				conditions: {
 					label: "Conditions d’acquisition",
-					text: "<strong>Tranche 1 :</strong> Présence dans le groupe au 16 décembre 2026<br><strong>Tranche 2:</strong> Présence dans le groupe au 16 décembre 2027",
+					text: "<strong>Tranche 1 :</strong> Présence dans le groupe au 8 décembre 2027<br><strong>Tranche 2:</strong> Présence dans le groupe au 8 décembre 2028",
 				},
 				nombre: {
 					label: "Nombre d’actions acquises",
@@ -46,7 +46,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				},
 				cession: {
 					label: `Cession des actions`,
-					text: `<strong>Actions de Tranche 1 :</strong> dès 2027 durant une période annuelle dédiée<br> <strong>Actions de Tranche 2 :</strong> dès 2028 durant une période annuelle dédiée`,
+					text: `<strong>Actions de Tranche 1 :</strong> dès 2028 durant une période annuelle dédiée<br> <strong>Actions de Tranche 2 :</strong> dès 2028 durant une période annuelle dédiée`,
 				}
 			},
 			blackBlock : {
@@ -73,26 +73,26 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				},
 				etapes : [
 					{
-						date: "Janvier 2026",
+						date: "Janvier 2027",
 						vignette: "J’ai reçu ma lettre d’attribution",
 						bgColor: "white",
 					},
 					{
-						date: "Février 2026",
+						date: "Février 2027",
 						vignette: "Je reçois un mail de la Banque Transatlantique et j’active mon compte",
 						description: "Ce mail vous permettra de vous rendre sur le portail de gestion dédié, afin d’activer votre compte et de renseigner vos données personnelles (RIB, etc), et d’accepter votre attribution.",
 						timeline: ["Consultation du règlement du plan", "Acceptation de mon attribution"],
 						bgColor: "red"
 					},
 					{
-						date: "Avril 2026",
+						date: "Avril 2027",
 						vignette: "Je reçois un lien DocuSign pour signer un contrat de liquidité",
 						description: "Un contrat de liquidité est un document régissant notamment les modalités de vente de vos actions. La Banque Transtlantique vous enverra par mail un lien pour le signer, via Docusign.",
 						timeline: ["Signature numérique du contrat de liquidité"],
 						bgColor: "red"
 					},
 					{
-						vignette: "Mon dossier est complet. Rendez-vous en décembre 2026 et décembre 2027 !",
+						vignette: "Mon dossier est complet. Rendez-vous en décembre 2027 et décembre 2028 !",
 						bgColor: "white"
 					}	
 				]
@@ -109,7 +109,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 			},
 			faq: {
 				sectionTitle: "Questions fréquentes",
-				disclaimer: "<p>Cette FAQ est proposée à des fins informatives, n’a pas vocation à être exhaustive et a pour objectif de répondre aux principales questions posées par les bénéficiaires du plan d’Attribution Gratuite d’Actions (« AGA ») iliad 2024.</p><p>Pour plus de précisions sur les termes et conditions des AGA iliad, nous vous invitons à consulter la documentation transmise, notamment le règlement du plan.</p>",
+				disclaimer: "<p>Cette FAQ est proposée à des fins informatives, n’a pas vocation à être exhaustive et a pour objectif de répondre aux principales questions posées par les bénéficiaires du plan d’Attribution Gratuite d’Actions (« AGA ») iliad 2025.</p><p>Pour plus de précisions sur les termes et conditions des AGA iliad, nous vous invitons à consulter la documentation transmise, notamment le règlement du plan.</p>",
 				qa: [
 					{
 						question: "Pourquoi ai-je bénéficié d’une attribution gratuite d’actions Iliad ?",
@@ -119,12 +119,12 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 					{
 						question: "Quels documents me seront remis pour accepter mon attribution d’actions gratuites ?",
 						reponse:
-							'<p>Les documents suivants vous sont/seront remis :</p> <p> <strong>Déjà disponibles </strong> <ul> <li>Votre lettre d’attribution précisant le nombre d’actions gratuites attribuées</li> <li>Le règlement du plan, détaillant les modalités et conditions d’attribution des actions gratuites (périodes et conditions d’acquisition notamment) </li> </ul> </p> <p> <strong>A venir :</strong> <ul> <li> Mi-janvier 2025 : Vous recevrez par email vos accès au site www.Transatplan.com, le portail de gestion de vos actions Iliad, administré par la Banque Transatlantique. Une fois l’email reçu, vous pourrez créer votre compte personnel (en y indiquant notamment votre adresse, RIB, personnalisation de l’email de contact etc.), pour gérer votre portefeuille d’actions.</li> <li> Début février 2025 : La Banque Transatlantique vous enverra via DocuSign la convention de liquidité, qui définit les conditions de cession des actions (calendrier, procédures, etc.). </li> </ul> </p>'
+							'<p>Les documents suivants vous sont/seront remis :</p> <p> <strong>Déjà disponibles </strong> <ul> <li>Votre lettre d’attribution précisant le nombre d’actions gratuites attribuées</li> <li>Le règlement du plan, détaillant les modalités et conditions d’attribution des actions gratuites (périodes et conditions d’acquisition notamment) </li> </ul> </p> <p> <strong>A venir :</strong> <ul> <li> Début février 2026 : Vous recevrez par email vos accès au site www.Transatplan.com, le portail de gestion de vos actions Iliad, administré par la Banque Transatlantique. Une fois l’email reçu, vous pourrez créer votre compte personnel (en y indiquant notamment votre adresse, RIB, personnalisation de l’email de contact etc.), pour gérer votre portefeuille d’actions.</li> <li> Mars 2026 : La Banque Transatlantique vous enverra via DocuSign la convention de liquidité, qui définit les conditions de cession des actions (calendrier, procédures, etc.). </li> </ul> </p>'
 					},
 					{
 						question: "Qu’est-ce que la période d’acquisition et à partir de quand court-elle ?",
 						reponse:
-							'<p>La période d’acquisition est la période pendant laquelle le bénéficiaire d’AGA n’est pas encore propriétaire des actions attribuées. Avant l’expiration de cette période d’acquisition, il ne peut donc ni céder ses actions, ni voter, ni recevoir des dividendes au titre des actions gratuites attribuées.</p> <p>Cette période d’acquisition court à compter de la décision d’attribution du 16 décembre 2024 et prend fin le 16 décembre 2026 pour les actions de la tranche 1 et le 16 décembre 2027 pour les actions de la tranche 2.</p>'
+							'<p>La période d’acquisition est la période pendant laquelle le bénéficiaire d’AGA n’est pas encore propriétaire des actions attribuées. Avant l’expiration de cette période d’acquisition, il ne peut donc ni céder ses actions, ni voter, ni recevoir des dividendes au titre des actions gratuites attribuées.</p> <p>Cette période d’acquisition court à compter de la décision d’attribution du 8 décembre 2025 et prend fin le 8 décembre 2027 pour les actions de la tranche 1 et le 8 décembre 2028 pour les actions de la tranche 2.</p>'
 					},
 					{
 						question: "Qu’advient-il de mes actions attribuées si je quitte le groupe ?",
@@ -139,7 +139,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 					{
 						question: "Que sont les conditions d’acquisition de mes actions ?",
 						reponse:
-							'<p>L&#39;acquisition définitive des actions gratuites est soumise au respect de conditions définies dans la décision d’attribution et le règlement du plan.</p> <p> <strong>Condition de présence :</strong> pour l’attribution définitive des actions gratuites, le bénéficiaire doit avoir conservé sans interruption la qualité de salarié d’Iliad ou d’une société comprise dans le périmètre du groupe Iliad jusqu’à la fin de la période d’acquisition. Par conséquent, si le salarié quitte Iliad ou une société comprise dans le périmètre du groupe Iliad avant l’expiration de la période d’acquisition, il perd ses droits à l’attribution des actions (sauf cas de décès ou invalidité régis par la loi). Aucune indemnisation ou compensation n’est alors exigible. </p> <p> <ul> <li>Actions de la tranche 1 : pour acquérir la totalité des actions de la tranche 1, le groupe doit atteindre les conditions de performance économiques fixées. Le bénéficiaire doit également être présent au sein du Groupe de manière ininterrompue entre le 16 décembre 2024 (date d’attribution) et le 16 décembre 2026 (date d’acquisition des actions de la tranche 1).</li> <li> Actions de la tranche 2 : pour acquérir la totalité des actions de la tranche 2, le groupe doit atteindre les conditions de performance économiques fixées. Le bénéficiaire doit également être présent au sein du Groupe de manière ininterrompue entre 16 décembre 2024 (date d’attribution) et le 16 décembre 2027 (date d’acquisition des actions de la tranche 2).</li> </ul> </p> <p> <strong>Conditions de performance :</strong> L’attribution définitive des actions gratuites dépend de la réalisation de deux critères de performance : <ul> <li> un critère financier (lié à l’Operational Free Cash Flow “OFCF”)</li> <li>un critère RSE (lié à la réduction des émissions de CO² par gibabit consommé)</li> </ul> </p> <p>L’atteinte partielle ou totale de ces objectifs peut avoir un impact sur le nombre d’actions définitivement acquises.</p>'
+							'<p>L&#39;acquisition définitive des actions gratuites est soumise au respect de conditions définies dans la décision d’attribution et le règlement du plan.</p> <p> <strong>Condition de présence :</strong> pour l’attribution définitive des actions gratuites, le bénéficiaire doit avoir conservé sans interruption la qualité de salarié d’Iliad ou d’une société comprise dans le périmètre du groupe Iliad jusqu’à la fin de la période d’acquisition. Par conséquent, si le salarié quitte Iliad ou une société comprise dans le périmètre du groupe Iliad avant l’expiration de la période d’acquisition, il perd ses droits à l’attribution des actions (sauf cas de décès ou invalidité régis par la loi). Aucune indemnisation ou compensation n’est alors exigible. </p> <p> <ul> <li>Actions de la tranche 1 : pour acquérir la totalité des actions de la tranche 1, le groupe doit atteindre les conditions de performance économiques fixées. Le bénéficiaire doit également être présent au sein du Groupe de manière ininterrompue entre le 8 décembre 2025 (date d’attribution) et le 8 décembre 2027 (date d’acquisition des actions de la tranche 1).</li> <li> Actions de la tranche 2 : pour acquérir la totalité des actions de la tranche 2, le groupe doit atteindre les conditions de performance économiques fixées. Le bénéficiaire doit également être présent au sein du Groupe de manière ininterrompue entre le 8 décembre 2025 (date d’attribution) et le 8 décembre 2028 (date d’acquisition des actions de la tranche 2).</li> </ul> </p> <p> <strong>Conditions de performance :</strong> L’attribution définitive des actions gratuites dépend de la réalisation de deux critères de performance : <ul> <li> un critère financier calculé à partir de l’Operational Free Cash Flow (OFCF), l’un des indicateurs financiers de référence du groupe</li><li>un critère ESG qui couvre les enjeux environnementaux, sociaux et de gouvernance, et qui vise dans le cadre de ce plan à sensibiliser les collaborateurs du groupe à ces sujets et à réduire l’empreinte de nos activités sur l’environnement.</li> </ul> </p> <p>L’atteinte partielle ou totale de ces objectifs peut avoir un impact sur le nombre d’actions définitivement acquises.</p>'
 					},
 					{
 						question: "Les conditions de performance du Groupe me sont-elles affectées personnellement ?",
@@ -149,12 +149,12 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 					{
 						question: "Quand puis-je céder mes actions ?",
 						reponse:
-							'A compter de l’expiration de la période d’acquisition des actions, le bénéficiaire ayant signé la convention de liquidité peut vendre chaque année ses actions gratuites pendant une période définie, appelée « fenêtre de liquidité », selon les conditions et modalités prévues par la convention de liquidité (qui sera partagée via DocuSign aux bénéficiaires début février 2025).'
+							'A compter de l’expiration de la période d’acquisition des actions, le bénéficiaire ayant signé la convention de liquidité peut vendre chaque année ses actions gratuites pendant une période définie, appelée « fenêtre de liquidité », selon les conditions et modalités prévues par la convention de liquidité (qui sera partagée via DocuSign aux bénéficiaires en mars 2026).'
 					},
 					{
 						question: "Quelle est la valeur actuelle de l’action Iliad ?",
 						reponse:
-							'La dernière évaluation du prix de l’action iliad est de 217,60€.'
+							'La dernière évaluation du prix de l’action iliad est de 263,00€.'
 					},
 					{
 						question: "Comment est déterminée la valeur de mes actions ?",
@@ -164,7 +164,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 					{
 						question: "Comment notifier à Iliad mon intention de céder mes actions ?",
 						reponse:
-							'Lorsque vos actions vous seront acquises, vous pourrez les céder partiellement ou totalement pendant une période dédiée appelée « fenêtre de liquidité ». Vous serez alors invité(e) à suivre la procédure figurant dans la convention de liquidité. Pour les actions de la tranche 1 qui seront acquises en décembre 2026, la cession sera possible à compter de 2027. Pour les actions de la tranche 2 qui seront acquises en décembre 2027, la cession sera possible à compter de 2028. Toutes les informations spécifiques et détaillées vous seront partagées dès que la cession d’actions vous sera possible.'
+							'Lorsque vos actions vous seront acquises, vous pourrez les céder partiellement ou totalement pendant une période dédiée appelée « fenêtre de liquidité ». Vous serez alors invité(e) à suivre la procédure figurant dans la convention de liquidité. Pour les actions de la tranche 1 qui seront acquises en décembre 2027, la cession sera possible à compter de 2028. Pour les actions de la tranche 2 qui seront acquises en décembre 2028, la cession sera possible à compter de 2028. Toutes les informations spécifiques et détaillées vous seront partagées dès que la cession d’actions vous sera possible.'
 					},
 					{
 						question: "Quel est le traitement social et fiscal des actions gratuites ?",
@@ -206,7 +206,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 		sections: {
 			modal: "The plan regulations will be available in a few days. Please return to this page to download them",
 			lettre: {
-				texte: `<p>The Board of Directors of iliad decided on December 16<sup>th</sup> 2024, on the initiative of its Founder and Chief Executive Officer, to implement a <strong>Free Iliad Share Allocation Plan.</strong></p> <p>We are pleased to inform you that <strong>you are a beneficiary of this plan</strong>. This initiative aims to recognize your contribution and to involve you in the long-term success of the Group.</p> <p>We inform you that <mark>{{ actions }} free iliad shares</mark> have been allocated to you under this plan.</p> <p>Your shares will vest in two phases : <strong>30% in {{ tranche1 }}</strong> and <strong>70% in {{ tranche2 }}</strong>, provided that you are still employed by the Group at each vesting date, and that the Group meets its financial and environmental objectives.</p> <p>Once your shares vested, you will become a shareholder of the Group and will be able to <strong>keep</strong> your shares and receive dividends, or <strong>sell</strong> them partially or totally to receive their corresponding cash value.</p> <p>Each year, the iliad share is valued by an independent financial expert. The latest iliad share price valuation was 217,60€. Based on this valuation, the {{ actions }} shares allocated to you are currently valued at <mark>{{ valorisation }}€<sup>1</sup></mark><strong>{{ ratio_salaire }}.</strong></p> <p>These free shares are a way of living up to our values of sharing, innovation and entrepreneurship. Together, let's continue to build an international telecoms group ambitious, committed and always closer to our subscribers' expectations. Yours sincerely,</p>`,
+				texte: `<p>The Board of Directors of iliad decided on December 8<sup>th</sup> 2025, on the initiative of its Founder and Chief Executive Officer, to implement a <strong>Free Iliad Share Allocation Plan.</strong></p> <p>We are pleased to inform you that <strong>you are a beneficiary of this plan</strong>. This initiative aims to recognize your contribution and to involve you in the long-term success of the Group.</p> <p>We inform you that <mark>{{ actions }} free iliad shares</mark> have been allocated to you under this plan.</p> <p>Your shares will vest in two phases : <strong>30% in {{ tranche1 }}</strong> and <strong>70% in {{ tranche2 }}</strong>, provided that you are still employed by the Group at each vesting date, and that the Group meets its financial and environmental objectives.</p> <p>Once your shares vested, you will become a shareholder of the Group and will be able to <strong>keep</strong> your shares and receive dividends, or <strong>sell</strong> them partially or totally to receive their corresponding cash value.</p> <p>Each year, the iliad share is valued by an independent financial expert. The latest iliad share price valuation was 263.00€. Based on this valuation, the {{ actions }} shares allocated to you are currently valued at <mark>{{ valorisation }}€<sup>1</sup></mark><strong>{{ ratio_salaire }}.</strong></p> <p>These free shares are a way of living up to our values of sharing, innovation and entrepreneurship. Together, let's continue to build an international telecoms group ambitious, committed and always closer to our subscribers' expectations. Yours sincerely,</p>`,
 				intituleXN: "President of the Board of Directors",
 				intituleTR: "Chief Executive Officer",
 				boutonDownload: "Download my allocation letter",
@@ -214,7 +214,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				ps: "Gross amount before tax"
 			},
 			header: {
-				title: "Your 2024<br><mark>free iliad shares</mark><br>allocation"
+				title: "Your 2025<br><mark>free iliad shares</mark><br>allocation"
 			},
 			videos: {
 				sectionTitle: 'Video',
@@ -237,7 +237,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				},
 				cession: {
 					label: `Transfer of the shares`,
-					text: `<strong>Tranche 1 shares:</strong> from 2027 during a dedicated period of time<strong>Tranche 2 shares:</strong> from 2028<br> during a dedicated period of time`,
+					text: `<strong>Tranche 1 shares:</strong> from 2028 during a dedicated period of time<strong>Tranche 2 shares:</strong> from 2028<br> during a dedicated period of time`,
 				}
 			},
 			blackBlock: {
@@ -264,26 +264,26 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 				},
 				etapes: [
 					{
-						date: "December 2024",
+						date: "December 2025",
 						vignette: "I have received my allocation letter",
 						bgColor: "white",
 					},
 					{
-						date: "January 2025",
+						date: "January 2026",
 						vignette: "I receive an e-mail from Banque Transatlantique and activate my account",
 						description: "This e-mail will take you to the dedicated website, where you will be able to activate your account, register your personal details (bank details, etc.) and accept your allocation.",
 						timeline: ["Read the plan rules", "Accept my allocation"],
 						bgColor: "red"
 					},
 					{
-						date: "February 2025",
+						date: "February 2026",
 						vignette: `I receive a DocuSign link to sign the "liquidity contract"`,
 						description: "A liquidity contract is a document defining the rules regarding the sale of your shares. Banque Transtlantique will email you a link to sign it, through DocuSign.",
 						timeline: ["Digital signature"],
 						bgColor: "red"
 					},
 					{
-						vignette: "My registration is complete. See you in May 2027 and May 2028!",
+						vignette: "My registration is complete. See you in May 2028 and May 2028!",
 						bgColor: "white"
 					}
 				]
@@ -300,7 +300,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 			},
 			faq: {
 				sectionTitle: "Q&A",
-				disclaimer: "<p> This Q&amp;A is provided for information purposes only, is not intended to be exhaustive, and is intended to answer the main questions that the recipients of the iliad 2024 Free Shares Allocation Plan may have. </p><p>For further details on the terms and conditions of the iliad AGA, please consult the documentation provided, in particular the plan regulations.</p>",
+				disclaimer: "<p> This Q&amp;A is provided for information purposes only, is not intended to be exhaustive, and is intended to answer the main questions that the recipients of the iliad 2025 Free Shares Allocation Plan may have. </p><p>For further details on the terms and conditions of the iliad AGA, please consult the documentation provided, in particular the plan regulations.</p>",
 				qa: [{
 						question: "Why did I receive an allocation of free Iliad shares?",
 						reponse:
@@ -314,7 +314,7 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 					{
 						question: "What is the vesting period and when does it start?",
 						reponse:
-							'<p> The vesting period is the period during which the shares granted are not yet owned by the beneficiary. Prior to expiry of the vesting period, the shares cannot be sold, grant right to vote or opened to receive dividends. </p> <p> The vesting period starts from the grant date in December 2024 and ends on two at the vesting date of Tranche 1 and Tranche 2. </p>'
+							'<p> The vesting period is the period during which the shares granted are not yet owned by the beneficiary. Prior to expiry of the vesting period, the shares cannot be sold, grant right to vote or opened to receive dividends. </p> <p> The vesting period starts from the grant date in December 2025 and ends on two at the vesting date of Tranche 1 and Tranche 2. </p>'
 					},
 					{
 						question: "What happens to my shares if I leave the Group?",
@@ -339,12 +339,12 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 					{
 						question: "When can I sell my shares?",
 						reponse:
-							'<p> Once the vesting period has been completed, beneficiaries who have signed the liquidity agreement may sell their free shares each year during a defined period, known as the “liquidity window”, in accordance with the terms and conditions set out in the liquidity agreement (which will be shared with beneficiaries via DocuSign at the beginning of February 2025). </p> <p>The first liquidity window for this plan will open in mid-2027.</p>'
+							'<p> Once the vesting period has been completed, beneficiaries who have signed the liquidity agreement may sell their free shares each year during a defined period, known as the “liquidity window”, in accordance with the terms and conditions set out in the liquidity agreement (which will be shared with beneficiaries via DocuSign at the beginning of February 2025). </p> <p>The first liquidity window for this plan will open in mid-2028.</p>'
 					},
 					{
 						question: "What is ilia's current share price?",
 						reponse:
-							'The latest valuation of the iliad share price is 217,60€.'
+							'The latest valuation of the iliad share price is 263,00€.'
 					},
 					{
 						question: "How is the value of my shares determined?",
@@ -382,11 +382,12 @@ export const i18n: Omit<App.I18n, 'it' | 'pl'> = {
 	},
 };
 
-function formatTimesWithComma(value: number): string {
-	return new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 2 }).format(value);
+function formatNFois(value: number, language: string): string {
+	const processedLanguage = language === 'fr' ? 'fr-FR' : 'en-US';
+	return new Intl.NumberFormat(processedLanguage, { maximumFractionDigits: 2 }).format(value);
 }
 
-function formatPercent(value: number): string {
+function formatPct(value: number): string {
 	return String(Math.round(value));
 }
 
@@ -394,15 +395,21 @@ export function ratioSalaireLabel(user: Pick<App.IUser, 'local' | 'ratio_salaire
 	const ratio = user.ratio_salaire;
 	const language = user.local === 'fr' ? 'fr' : 'en';
 
-	if (ratio < 0) {
-		const pct = formatPercent(Math.abs(ratio) * 100);
+
+	if (ratio  > 0.25 && ratio < 1) {
+		const pct = formatPct(Math.abs(ratio) * 100);
 		return language === 'fr'
 			? `, soit ${pct}% de votre rémunération annuelle brute`
 			: `, representing ${pct}% of your gross annual salary`;
 	}
 
-	const times = formatTimesWithComma(ratio);
-	return language === 'fr'
+	else if (ratio > 1) {
+		const times = formatNFois(ratio, language);
+		return language === 'fr'
 		? `, soit ${times} fois le montant de votre rémunération annuelle brute`
 		: `, equivalent of ${times} time your annual base salary`;
+	}
+
+	return '';
+
 }

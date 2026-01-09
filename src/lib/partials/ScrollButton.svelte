@@ -1,8 +1,8 @@
 <script>
 	const { offset = 0, reverse = false, negative = true } = $props();
 	const offsets = $derived(negative
-		? [ '-top-0', '-top-2','-top-4','-top-10','-top-16','-top-20','-top-24','-top-32','-top-48', '-top-64', '-top-96', '-top-128']
-		: [ 'top-0', 'top-2','top-4','top-10','top-16','top-20','top-24','top-32','top-48', 'top-64', 'top-96', 'top-128']
+		? [ '-top-0', '-top-2','-top-4','-top-10','-top-16','-top-20','-top-24','-top-32','-top-48', '-top-64', '-top-72', '-top-96', '-top-128', '-top-140']
+		: [ 'top-0', 'top-2','top-4','top-10','top-16','top-20','top-24','top-32','top-48', 'top-64', 'top-72', 'top-96',  'top-128', 'top-140']
 	);
 </script>
 <button

@@ -2,7 +2,7 @@
 	const { l } : { l: App.ILocalizedContent } = $props();
 </script>
 
-<nav class="md:flex xl:flex-col hidden max-w-[1160px] mx-auto text-left flex-row mt-6 pb-48 py-3 xl:place-content-start md:place-content-center">
+<nav class="md:flex xl:flex-col hidden max-w-[1160px] mx-auto text-left flex-row mt-6 pb-48 pt-12 py-3 xl:place-content-start md:place-content-center">
 	<ul class="xl:block md:flex md:flex-row md:gap-x-6 md:items-end space-y-3 text-black relative font-head z-[1]">
 		<li class="hover:text-ired cursor-pointer"><a href="/">{l.general.menu.lettre}</a></li>
 		<li class="hover:text-ired cursor-pointer"><a href="#enbref">{l.general.menu.enbref}</a></li>

@@ -20,10 +20,10 @@
 	const lettre = $derived(replacePlaceholders(l.sections.lettre.texte, {
 		...user,
 		dear: user?.civilite === 'H' ? l.general.dear[0] : l.general.dear[1],
-		feminin: user?.civilite === 'H' ? '' : 'e',
 		tranche1: dates.tranche1[localizationKey],
 		tranche2: dates.tranche2[localizationKey],
 		ratio_salaire: user ? ratioSalaireLabel(user) : '',
+		valorisation: Number(user?.actions) > 0 ? Intl.NumberFormat(language === 'fr' ? 'fr-FR' : 'en-US', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(263 * Number(user.actions)) : ''
 	}));
 
 	onMount(async () => { 
@@ -49,7 +49,7 @@
 	<div class="w-full md:px-24 px-2 md:py-16 py:2 md:mt-0 mt-5 bg-white rounded-xl h-screen" ></div>
 	{:else}
 	<div class="w-full md:px-24 px-6 md:py-16 py:2 md:mt-0 mt-5 bg-white rounded-xl" transition:fly={{y: 100, duration: 1000 }}>
-		<h2 class="text-center mt-4 mb-12 text-3xl font-bold md:pt-0 pt-10">
+		<h2 class="text-center mt-4 mb-12 text-3xl font-bold md:pt-0 pt-10 capitalize">
 			{user?.civilite === 'H' ? l.general.dear[0] : l.general.dear[1]} {user?.prenom},
 		</h2>
 		<p class="prose prose-strong:font-semibold font-light leading-6 max-w-none md:text-[0.95rem] text-lg">

@@ -2,7 +2,7 @@
 	import FAQ from './partials/FAQ.svelte';
 	import Revente from './partials/Revente.svelte';
 	const { user, l, language } : { user: App.IUser | null, l: App.ILocalizedContent, language: 'fr' | 'en' } = $props();
-	import { Lettre, Title, Modal, Block, Actions, BlackTitle, Criteres, Etape, ScrollButton, IBouton, Footer, Nav } from './partials';
+	import { Lettre, Title, Modal, Block, Actions, Criteres, Etape, ScrollButton, Footer, Nav } from './partials';
 	import Header from './partials/Header.svelte';
 	import { onMount } from 'svelte';
 	import gsap from "gsap";
@@ -47,14 +47,14 @@
 
 	const dates:App.Dates = {
 		tranche1: {
-			'fr-fr' : "décembre 2026",
-			'pl-en': "December 2026",
-			'it-en': "May 2027",
-		},
-		tranche2: {
 			'fr-fr' : "décembre 2027",
 			'pl-en': "December 2027",
 			'it-en': "May 2028",
+		},
+		tranche2: {
+			'fr-fr' : "décembre 2028",
+			'pl-en': "December 2028",
+			'it-en': "May 2029",
 		},
 		day: {
 			'fr-fr' : "16",
@@ -82,7 +82,7 @@
 
 <Nav {l} />
 
-<section class="bg-igray-100 pb-72">
+<section class="bg-igray-100 pb-24">
 
 	<div class="xl:container mx-auto">
 
@@ -115,7 +115,7 @@
  <!-- NOTE: BLACK BLOCK -->
 <section>
 <div class="xl:container mx-auto">
- <ScrollButton negative={false} offset={10} />
+ <ScrollButton negative={false} offset={11} />
 </div>
 </section>
  <section class="relative">
@@ -163,7 +163,7 @@
  <section class="bg-igray-100 md:-mt-96 -mt-60 pb-20">
 
 	<div class="xl:container mx-auto pt-56 pb-4">
-		<ScrollButton offset={10} />
+		<ScrollButton offset={11} />
 
 		<Block mt="28">
 			<Title id="vente" title={l.sections.prixdeVente.sectionTitle} />
@@ -183,7 +183,7 @@
 
 	<div class="xl:container mx-auto">
 
-		<ScrollButton offset={0} />
+		<ScrollButton offset={9} />
 	
 		<Block mt="10">
 
@@ -210,7 +210,7 @@
 
 	<div class="xl:container mx-auto py-10" id="documents">
 
-		<ScrollButton offset={3} />
+		<ScrollButton offset={13} />
 
 		<Block>
 			<Footer {l} {language} {user} bind:showModal />

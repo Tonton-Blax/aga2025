@@ -71,7 +71,7 @@
 	</div>
 
 	<div class="md:flex hidden w-1/3 h-5/6 justify-start self-end relative">
-		<img loading="lazy" src={people3} alt="Equipe Iliad" class="absolute -bottom-[75px] md:w-[300px] w-[150px]"/>
+		<img loading="lazy" src={people3} alt="Equipe Iliad" class="absolute -bottom-[75px] md:w-[300px] w-[150px] z-[2]"/>
 	</div>
 
  </section>
